@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito'); 
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+    --font-family: "Nunito";
+    --color-white: #FFFFFE;
+    --color-black: #16161A;
+    --color-primary: #7F5AF0;
+    --color-secundary: #A786DF;
+    --color-tertiary: #72757E;
+    --color-green: #2CB67D;
+    --color-gray: #94A1B2;
+    --color-purple: #6B47DC;
+    --color-neutral: #232E35;
+    --color-red: #EF4565;
+}
+
+
+.menu{
+  /* Auto Layout */
+display:flex;
+flex-direction: row; 
+justify-content:space-between;
+width: 100%;
+height: 70px;
+bottom: 0px;
+padding: 15px;
+padding-top: 15px;
+position: fixed;
+z-index:  1;
+/* Neutral */
+
+background: var(--color-neutral);
+
+}
+.curso-inicial{
+  display: flex;
+  flex-direction:column;
+  align-items: center;       
+}
+.cursos-secundarios{
+    justify-content: space-between;
+    width: 300px;
+}
+.cursos{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+
+  
+}
+
+
+.curso{
+transform:translateX(25%);
+  margin: 5px;
+  padding: 5px;
+}
+
+@media (min-width: 600px) {  
+  
+.menu{
+/* Auto Layout */
+display:flex;
+flex-direction:row; 
+align-content: space-between;
+width: 400px;
+height: 400px;
+position: fixed;
+bottom: 0px;
+border-radius: 10%;
+transform: translateX(60%);
+transform: translateY(80%);
+z-index: 0;
+}
+  
+.opcion{
+align-items: center;
+}
+
+
+
+}        
+@media (min-width: 1240px) {
+
+  
+  .menu{
+    /* Auto Layout */
+  display:flex;
+  flex-direction:row; 
+  align-content: space-between;
+  width: 400px;
+  height: 400px;
+  position: fixed;
+  bottom: 100px;
+  top: 0px;
+  border-radius: 10%;
+  transform: translateX(60%);
+  transform: translateY(-80%);
+  z-index: 0;
+  }
+      
+  .opcion{
+    transform: translateY(320px);
+    align-items: center;
+  }    
+
+
+    }        
+  

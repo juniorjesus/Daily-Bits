@@ -1,0 +1,346 @@
+body {
+    margin-top: 16px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font-family: var(--font-family);  
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+p{
+    color: var(--color-white);
+    transform: translateY(-5px);
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+h3{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 10px;
+    padding-left: 10px;
+                                
+}
+
+.progreso{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 13px;
+    justify-content: space-between;
+}
+.avatar{
+    
+    width: 112px;
+    height: 238px;
+    margin-top: 30px;
+}
+
+.pregunta{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.preguntas{
+
+  display: flex;
+  position:relative;
+  color: var(--color-white);  
+  background: var(--color-neutral);
+  border-color: var(--color-white);
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 328px;
+  height: 56px;
+  margin-top: 15px; 
+  padding-left: 15px;
+  text-decoration: none;
+}
+
+
+
+.container {
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 13px;
+    cursor: pointer;
+
+    letter-spacing: 0.005em;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    right: 8px;
+    height: 25px;
+    width: 25px;
+    background-image:url("https://gejocad.github.io/DailyBits/img/radio-button.png");
+    border-radius: 50%;
+  }
+  
+
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-image:url("https://gejocad.github.io/DailyBits/img/radio-button-active.png");
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmark:after {
+    background-image:url("https://gejocad.github.io/DailyBits/img/radio-button-active.png");
+  }
+  
+ .comprobar{
+
+  position:absolute;
+  width: 328px;
+  height: 50px; 
+  color: var(--color-white);
+  transform: translateX(-164px);
+  bottom: 16px;
+  margin-top: 20px;
+  background: #D4CAF3;
+  border-radius: 16px;
+
+  
+ }
+
+ .comprobar-active{
+  position:absolute;
+  width: 328px;
+  height: 50px; 
+  color: var(--color-white);
+  transform: translateX(-164px);
+  bottom: 16px;
+  margin-top: 20px;
+  background: var(--color-purple);
+  border-radius: 16px;
+ }
+
+
+ .contenedor_img{
+     align-items: center;
+    justify-content: space-between;
+    align-content: center;
+    width: 360px;
+    transform: translateX(30px);
+   
+ }
+
+ .resp_img{
+justify-content: center;
+align-items: center;
+padding: 8px;
+
+position: static;
+width: 144px;
+height: 200px;
+left: 32px;
+top: 0px;
+ }
+
+ .contenedor_etq{
+  position:absolute;
+  align-items: center;
+ justify-content: space-between;
+ align-content: center;
+ 
+ bottom: 95px;
+ 
+ transform: translateX(30px);
+
+}
+
+.contenedor_estr{
+  justify-content: center;
+  align-items: center;
+  padding: 4px 20px 8px;
+  padding-bottom: 20px;
+  position: static;
+  left: 32px;
+  top: 0px;
+ 
+}
+
+.resp_etq{
+  justify-content: center;
+  align-items: center;
+  padding: 4px 4px 8px;
+  padding-bottom: 10px;
+  position: static;
+  left: 32px;
+  top: 0px;
+   }
+
+   .linea{
+    position:static;
+    width: auto;
+    margin-left: -4px;
+    height: 1px;
+    right: 16px;
+    top: 75px;
+    margin-bottom: 7px;
+    
+    
+    background: #94A1B2;
+   }
+
+   
+   .pregunta-correcta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+    
+    position: absolute;
+    width: 100%;
+    height: 122px;
+    left: 0px;
+    bottom: 0px;
+    
+    background: #ACFFCF;
+   }
+
+   .mensaje-correcto{
+    
+  
+    position: static;
+    width: 104px;
+    height: 24px;
+    left: calc(50% - 104px/2 - 112px);
+    top: calc(50% - 24px/2 - 33px);
+    transform: translateX(-120px);
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: 0.005em;
+
+
+color: var(--color-black);
+   }
+
+.continuar-correcto{
+  position:absolute;
+  width: 328px;
+  height: 50px; 
+  color: var(--color-white);
+  bottom: 16px;
+  margin-top: 20px;
+  background: var(--color-green);
+  border-radius: 16px;
+}
+
+
+.pregunta-incorrecta{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  
+  position: absolute;
+  width: 100%;
+  height: 154px;
+  left: 0px;
+  bottom: 0px;
+  
+  background: #F9CFD7;
+ }
+
+ .mensaje-incorrecto{
+  
+
+  position: static;
+  width: 200px;
+  height: 24px;
+  left: calc(50% - 104px/2 - 112px);
+  top: calc(50% - 24px/2 - 33px);
+  transform: translateX(-70px);
+  /* Body 1/Bold */
+
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.005em;
+
+/* Black */
+
+color: var(--color-red);
+ }
+
+.continuar-incorrecto{
+position:absolute;
+width: 328px;
+height: 50px; 
+color: var(--color-white);
+bottom: 16px;
+margin-top: 20px;
+background: var(--color-red);
+border-radius: 16px;
+}
+
+.correccion{
+  position: static;
+  width: 200px;
+  height: 24px;
+  left: calc(50% - 36px/2 - 74.5px);
+  top: calc(50% - 24px/2 + 16px);
+  
+  transform: translateX(-70px);
+  /* Body 1/Regular */
+  
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+  
+  letter-spacing: 0.005em;
+  
+  color: var(--color-red)
+}
+
+
+/*CLASES DE JUEGO ORDENAMIENTO*/
+
+.btn-Orde{
+  padding: 0; border: none; background: none; 
+}
